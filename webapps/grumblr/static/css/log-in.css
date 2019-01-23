@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+  background-color: #FAFAFA;
+  color: #DCDCDC;
+  font-family: Open Sans;
+}
+
+.login-box {
+  margin-top: 150px;
+  text-align: center;
+  width: 380px;
+  background-color: white;
+  padding: 40px; 
+}
+
+.signup-box{
+  margin-top: 20px;
+  text-align: center;
+  width: 380px;
+  background-color: white;
+  padding: 20px; 
+}
+
+.logo {
+  height: 75px;
+  margin-bottom: 15px;
+}
+.form-control {
+  margin-bottom: 15px;
+}
+.btn {
+  width: 100%;
+  font-size: 16px;
+}
+
+.forgot a {
+  color: #777777;
+  font-size: 14px;
+  text-decoration: underline;
+}
+.forgot b {
+  color: #777777;
+  font-size: 14px;
+}
+
+.err {
+  color: red;
+}

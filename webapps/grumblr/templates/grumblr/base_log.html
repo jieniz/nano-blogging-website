@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{% block title %}{% endblock %} | Grumblr</title>
+	
+	{% load static %}
+	<!-- Bootstrap core CSS -->
+	<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="{% static 'css/log-in.css' %}" rel="stylesheet">
+</head>
+
+<body>
+	<div class="well login-box center-block">
+		<img class="logo" src="{% static 'images/grumblr-font3.png' %}"></img>
+		{% block content %}{% endblock %}
+	</div>
+	<div class="well signup-box center-block">
+		<div class="forgot">
+			{% block switch %}{% endblock %}
+		</div>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+{% extends "grumblr/base_log.html" %}
+{% block title %}Grumblr Register{% endblock %}
+
+{% block content %}
+<form action="{% url 'register' %}" method="post">
+  {% csrf_token %}
+  {{ form }}  
+  <input class="btn btn-primary" type="submit" onclick="check(this.form)" value="Sign up"/>
+</form>
+{% endblock %}
+
+{% block switch %}
+<b>Have an account? </b><a href="{% url 'login' %}">Log in</a>
+{% endblock %}

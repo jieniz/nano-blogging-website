@@ -1,0 +1,20 @@
+{% extends "grumblr/base.html" %}
+{% block title %}Edit Profile{% endblock %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+  <div class="col-sm-4 col-md-4"></div>
+  <form enctype="multipart/form-data" method="post" action="{% url 'edit_profile' %}">
+    <div class="col-sm-4 col-md-4">
+      <p style="font-size:28px">{{ user.username }}</p><br>
+      {% csrf_token %}
+      {{ form }} 
+      <br><input class="btn btn-default center-block btn-block" type="submit" value="Save Changes">
+    </div>
+  </form>
+  <div class="col-sm-4 col-md-4"></div>
+</div>
+{% endblock %}
+
+{% block post %}{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "grumblr/base_log.html" %}
+{% block title %}Grumblr Email Confirmation{% endblock %}
+
+{% block content %}
+<p><b>Please confirm your email to complete setup for your account.</b></p>
+{% endblock %}
+
+{% block switch %}
+<b>Have an account? </b><a href="{% url 'login' %}">Log in</a>
+{% endblock %}
